@@ -60,6 +60,7 @@ import {IndexingCreateSingleNonUniqueIndex} from "./db-design/indexing/indexing-
 import {IndexingCreateCompositeIndex} from "./db-design/indexing/indexing-create-composit-index";
 import {TransactionsDirtyRead} from "./db-design/transactions/transactions-dirty-reads";
 import {TransactionsNonRepeatableRead} from "./db-design/transactions/transactions-non-repeatable-read";
+import ContextAnswer from "./web-dev/react/context/context-answer";
 
 function App() {
     return (
@@ -83,6 +84,7 @@ function App() {
                         </Route>
 
 
+                        <>
                         <Route path="/db-design" exact component={DatabaseDesign}/>
                         <>
                             <Route path="/db-design/transactions/transactions-non-repeatable-reads"
@@ -149,6 +151,13 @@ function App() {
                                    exact component={MongoFindById}/>
                             <Route path="/db-design/mongodb/mongo/mongo-find-all"
                                    exact component={MongoFindAll}/>
+                        </>
+                            </>
+                        
+                        
+                        <>
+                            <Route path="/web-dev/react/context" exact
+                                   component={ContextAnswer}/>
                         </>
                         
                         <>

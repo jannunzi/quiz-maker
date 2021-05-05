@@ -16,29 +16,11 @@ const WebDevelopment = () => {
   return (
     <>
       <h2>Web Development</h2>
-        
-        <Nav1/>
-        <RoutingNavigation/>
-        
-        <ColorAndBgColor/>
-        
-        <Textarea/>
-        
-        <Value/>
-        
-        <Title/>
-        
-        <Placeholder/>
-        
-        <LabelsAndRadios/>
-        
-        <Labels/>
-
-        <Filter/>
-        <h3>Map</h3>
-            <Map1/>
         <h3>React</h3>
         <div>
+            <Link to="/web-dev/react/context" className="list-group-item">
+                React Context
+            </Link>
             <Link to="/web-dev/react/function/return" className="list-group-item">
                 React Function Return
             </Link>
@@ -83,6 +65,27 @@ const WebDevelopment = () => {
                 Widget List
             </Link>
         </div>
+
+        <Nav1/>
+        <RoutingNavigation/>
+
+        <ColorAndBgColor/>
+
+        <Textarea/>
+
+        <Value/>
+
+        <Title/>
+
+        <Placeholder/>
+
+        <LabelsAndRadios/>
+
+        <Labels/>
+
+        <Filter/>
+        <h3>Map</h3>
+        <Map1/>
     </>
   )
 }
